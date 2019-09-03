@@ -1,4 +1,7 @@
 trigger: 'none' # will disable CI builds entirely
+- task: MSBuild@1
+  inputs:
+    solution: '**/*.sln'
    
 jobs:
 - job: WebApp
